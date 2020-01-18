@@ -63,7 +63,6 @@ def pending_task(request, task_id):
     task.save()
     return redirect('todolist')
 
-@login_required
 def index(request):
     context = {
         'index_text':"Welcome Index Page"
